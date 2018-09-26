@@ -1,0 +1,58 @@
+p{
+    margin:0px;
+}
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.about > img {
+    width:35%;
+    height:35%;
+}
+
+#personal-info{
+    background-color: #5d3f37;
+}
+#personal-info h2,div{
+    color: white;
+}
+.personal-info-item p{
+     display: inline-block;
+}
+.triangle {
+    background-color: #decca2;
+}
+.triangle p{
+    color: #5d3f37;
+}
+.content-text {
+    color: #5d3f37;
+}
+.skill-name{
+    background-color: #4b5c59;
+}
+.form-container{
+    width: 450px;
+    height: 250px;
+    background-color: #4b5c59;
+}
+.form-container input,textarea{
+   display: block;
+}
+.submit-button {
+    width:150px;
+    height:25px;
+    background-color: #decca2;
+    border-width: 0px;
+    color: white;
+}
+
+footer{
+    background-color: #5d3f37;
+    height: 50px;
+}
+footer p{
+    text-align: center;
+    color: white
+}
