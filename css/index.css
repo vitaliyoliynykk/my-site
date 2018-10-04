@@ -1,58 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=BioRhyme');
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC');
+
+body{
+    width:960px;
+    margin:0 auto;
+}
 p{
     margin:0px;
 }
-nav ul li {
-    display: inline-block;
-    list-style-type: none;
+header{
+    display: grid;
+    grid-template-columns: 420px 55px 1fr;
+    height: 100px;
 }
-
-.about > img {
-    width:35%;
-    height:35%;
+.header-triangle{
+    background-image: url('../img/header-triangle.svg');
 }
-
-#personal-info{
+.header-nav{
+    background-color: #4b5c59;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+nav{
+    width: 320px;
+    display: flex;
+    justify-content: space-around;
+}
+nav a{
+    text-decoration: none;
+    color:white;
+    font-family: 'Nunito', sans-serif;
+}
+.about{
+    height: 450px;
+    display: grid;
+    grid-template-columns: 625px 1fr;
+}
+.about-photo{
+    background: url('../img/main_photo.jpg');
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 360px 1fr;
+}
+.about-triangle{
+    background: url('../img/about-triangle.svg');
+}
+.personal-info{
     background-color: #5d3f37;
-}
-#personal-info h2,div{
     color: white;
+    display: grid;
+    grid-template-rows: 150px 205px 1fr;
+}
+.personal-info h2{
+    font-family: 'BioRhyme', serif;
+    font-size: 26px;
+}
+.personal-info div:first-child h2{
+   margin-bottom: 0px;
+   margin-top: 60px;
+}
+.personal-info div:first-child p{
+   font-family: 'Alegreya Sans SC', sans-serif;
 }
 .personal-info-item p{
-     display: inline-block;
+    display: inline;
+    font-size: 16px;
+    font-family: 'Alegreya Sans SC', sans-serif;
 }
-.triangle {
-    background-color: #decca2;
+.personal-info-item{
+    width: 320px;
+    margin: 4px;
+    display: grid;
+    grid-template-columns: 60px 1fr;
 }
-.triangle p{
-    color: #5d3f37;
+.personal-info-item p:first-child{
+    font-weight: bold;
 }
-.content-text {
-    color: #5d3f37;
-}
-.skill-name{
-    background-color: #4b5c59;
-}
-.form-container{
-    width: 450px;
-    height: 250px;
-    background-color: #4b5c59;
-}
-.form-container input,textarea{
-   display: block;
-}
-.submit-button {
-    width:150px;
-    height:25px;
-    background-color: #decca2;
-    border-width: 0px;
-    color: white;
-}
-
-footer{
-    background-color: #5d3f37;
-    height: 50px;
-}
-footer p{
-    text-align: center;
-    color: white
+.info-items-wraper{
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
 }
